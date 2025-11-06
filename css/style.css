@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Skip link (hidden but visible on focus) */
+.skip-link {
+    position: absolute;
+    top: -999px;
+    background: #000;
+    color: #fff;
+
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+}
+
+.site-header {
+    background-color: #1A3129;
+}
+
+.promotion {
+    background-color: #2C5446;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ball {
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.topbar-inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .35rem 0;
+}
+
+.topbar .promotion {
+    font-size: .85rem;
+}
+
+.top-links a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.header-inside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+
+.brand-name {
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    color: #1A3129;
+}
+
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-links li {
+    color: #fff;
+    margin: 1rem;
+}
+
+.cta .btn-cta {
+    background-color: #E5F5BD;
+    padding: .5rem .75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #1A3129;
+    font-weight: 600;
+    border: none;
+}
+
+
+.hero {
+
+    padding: 2rem 0;
+}
+
+.hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+.hero-media {
+    margin-left: -150px;
+    margin-top: -30px;
+}
+
+.hero-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.eyebrow {
+    color: #2a5a36;
+    margin: 0;
+    font-weight: 600;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin: .5rem 0;
+    color: #1A3129;
+}
+
+.lead {
+    color: #656567;
+}
+
+.hero-actions {
+    margin-top: 1rem;
+    display: flex;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: .6rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #CBEA7B;
+    color: #191919;
+}
+
+.btn-outline {
+    color: #191919;
+}
+
+.happy-customers {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: #656567;
+}
+
+
+
+.features {
+    padding: 2.5rem 0;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: .25rem;
+    font-size: 1.6rem;
+}
+
+.section-intro {
+    text-align: center;
+    color: #656567;
+    margin: 0 0 1.25rem 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.feature-card {
+    background-color: #F6FBE9;
+    padding: 1rem;
+}
+
+.feature-card .icon {
+    width: 68px;
+    height: 68px;
+
+}
+
+.feature-card h3 {
+    margin: .5rem 0;
+    font-size: 1rem;
+}
+
+
+.blogs {
+    padding: 2rem 0;
+}
+
+.blogs-heading {
+    text-align: center;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.blog-card {
+    background-color: #F6FBE9;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: 60%;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 160px;
+}
+
+.blog-meta {
+    padding: .75rem;
+}
+
+.blog-meta h3 {
+    margin: 0 0 .35rem 0;
+    font-size: 1rem;
+}
+
+.byline {
+    color: #656567;
+}
+
+
+
+.testimonials {
+    padding: 2rem 0;
+}
+
+.testimonials-heading {
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.testimonial {
+    background-color: #F6FBE9;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+
+.pricing {
+    padding: 2.5rem 0 4rem 0;
+}
+
+.pricing-heading {
+    text-align: center;
+}
+.pricing .container{
+    text-align: center;
+}
+
+.pricing-toggle {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.pricing-toggle .toggle {
+    padding: .4rem .75rem;
+    border-radius: 999px;
+
+    background: transparent;
+    cursor: pointer;
+}
+
+.pricing-toggle .toggle.active {
+    background-color: #E5F5BD;
+    border-color: #E5F5BD;
+}
+
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.plan {
+    background-color: #F6FBE9;
+    border-radius: 12px;
+    padding: 1rem;
+
+    text-align: center;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: .5rem 0;
+}
+
+.btn-choose {
+    margin-top: .75rem;
+    display: inline-block;
+    padding: .5rem .85rem;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: #CBEA7B;
+    color: #1A3129;
+}
+
+
+
+.site-footer {
+    background-color: #1A3129;
+    color: #fff;
+    padding: 1.25rem 0;
+    margin-top: 2rem;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white
+}
+
+.footer-bottom {
+    background-color: #000;
+    color: white
+}
+
+.footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+}
+/* screen size below 900 px will be affected by the following code */
+@media (max-width: 900px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+}
