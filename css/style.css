@@ -68,7 +68,8 @@ body {
     justify-content: space-between;
     padding: 1rem 0;
 }
-.textandlogo{
+
+.textandlogo {
     display: flex;
 }
 
@@ -84,12 +85,15 @@ body {
     list-style: none;
     display: flex;
 
+
 }
 
 .nav-links li {
     color: #fff;
     margin: 1rem;
+
 }
+
 
 .cta .btn-cta {
     background-color: #E5F5BD;
@@ -118,6 +122,19 @@ body {
 .hero-media {
     margin-left: -150px;
     margin-top: -30px;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 .hero-media img {
@@ -162,6 +179,11 @@ body {
 .btn-primary {
     background-color: #CBEA7B;
     color: #191919;
+    transition: transform 1s linear;
+}
+
+.btn-primary:hover {
+    transform: scale(1.5);
 }
 
 .btn-outline {
@@ -291,7 +313,8 @@ body {
 .pricing-heading {
     text-align: center;
 }
-.pricing .container{
+
+.pricing .container {
     text-align: center;
 }
 
@@ -321,7 +344,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin-top: 1rem;
+
+
 }
+
 
 .plan {
     background-color: #F6FBE9;
@@ -369,6 +395,7 @@ body {
     gap: 1rem;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .footer-nav a {
@@ -386,6 +413,12 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.main-nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
 /* screen size below 900 px will be affected by the following code */
 @media (max-width: 900px) {
     .hero-inner {

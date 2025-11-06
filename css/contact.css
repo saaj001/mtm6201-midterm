@@ -68,7 +68,8 @@ body {
     justify-content: space-between;
     padding: 1rem 0;
 }
-.textandlogo{
+
+.textandlogo {
     display: flex;
 }
 
@@ -84,6 +85,11 @@ body {
     list-style: none;
     display: flex;
 
+
+}
+
+.main-nav a {
+    text-decoration: none;
 }
 
 .nav-links li {
@@ -112,7 +118,8 @@ body {
 
     text-align: center;
 }
-.introduction img{
+
+.introduction img {
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -191,6 +198,7 @@ body {
     grid-template-columns: 1.2fr .8fr;
     gap: 1.25rem;
 }
+
 /* grid-2 is the name and email section */
 .contact-form .grid-2 {
     margin-top: 20px;
@@ -200,6 +208,7 @@ body {
     gap: 3rem;
     width: 95%;
 }
+
 /* grid-3 is the phone number and message section */
 .contact-form .grid-3 {
 
@@ -321,20 +330,24 @@ textarea {
     justify-content: space-between;
     gap: 1rem;
 }
-.cta-text img{
+
+.cta-text img {
     margin-left: -15px;
     margin-top: -15px;
 }
-.petals{
+
+.petals {
     margin-left: 103%;
     margin-bottom: -20px;
 }
+
 .footer-nav ul {
     list-style: none;
     display: flex;
     gap: 1rem;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .footer-nav a {
@@ -351,6 +364,10 @@ textarea {
 .footer-bottom .container {
     display: flex;
     justify-content: space-between;
+}
+
+.main-nav .nav-links a {
+    color: #fff;
 }
 
 @media (max-width: 1000px) {
@@ -370,14 +387,15 @@ textarea {
 }
 
 @media (max-width: 720px) {
-        .contact-form .grid-2 {
+    .contact-form .grid-2 {
         grid-template-columns: 1fr;
     }
+
     .main-nav {
         display: none;
     }
 
-  
+
     .footer-top {
         flex-direction: column;
         align-items: flex-start;
@@ -387,4 +405,3 @@ textarea {
         grid-template-columns: 1fr;
     }
 }
-
