@@ -1,0 +1,390 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Skip link (hidden but visible on focus) */
+.skip-link {
+    position: absolute;
+    top: -999px;
+    background: #000;
+    color: #fff;
+
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+}
+
+.site-header {
+    background-color: #1A3129;
+}
+
+.promotion {
+    background-color: #2C5446;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ball {
+    margin-top: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+.topbar-inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .35rem 0;
+}
+
+.topbar .promotion {
+    font-size: .85rem;
+}
+
+.top-links a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.header-inside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.textandlogo{
+    display: flex;
+}
+
+.brand-name {
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    color: #1A3129;
+}
+
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-links li {
+    color: #fff;
+    margin: 1rem;
+}
+
+.cta .btn-cta {
+    background-color: #E5F5BD;
+    padding: .5rem .75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #1A3129;
+    font-weight: 600;
+    border: none;
+}
+
+.contact {
+    padding: 2rem 0 1rem 0;
+}
+
+.introduction {
+    background-color: #F6FBE9;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+.introduction img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.intro-badge {
+    width: 62px;
+    height: 62px;
+    border-radius: 16px;
+    margin: -40px auto 12px auto;
+    background: linear-gradient(180deg, #c6ef9b, #9fe06b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #143624;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: clamp(1.6rem, 1.1rem + 1.2vw, 2.2rem);
+    margin: .25rem 0 .4rem 0;
+}
+
+.intro-para {
+    text-align: center;
+    color: #6b6b6b;
+    max-width: 960px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-method {
+    margin-top: 1rem;
+    background: #0f2a1f;
+    padding: 6rem;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.contact-item {
+    background: #173728;
+    border: 1px solid rgba(255, 255, 255, .06);
+    color: #eaf5e4;
+    padding: .9rem 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    justify-content: center;
+}
+
+.contact-item .ico {
+    background: rgba(255, 255, 255, .08);
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* below is the contact form css */
+.form-section {
+    padding: 1.2rem 0 2.6rem 0;
+}
+
+.fs {
+    background: #f7fbef;
+    border: 1px solid rgba(0, 0, 0, .06);
+    border-radius: 14px;
+    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 1.25rem;
+}
+/* grid-2 is the name and email section */
+.contact-form .grid-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    width: 95%;
+}
+/* grid-3 is the phone number and message section */
+.contact-form .grid-3 {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+}
+
+.field {
+    display: block;
+}
+
+.label {
+    display: block;
+    font-size: .9rem;
+    color: #47624f;
+    margin-bottom: .35rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    border: 1px solid #dae7d4;
+    background: #eef6e7;
+    color: #173728;
+    border-radius: 10px;
+    padding: .75rem .85rem;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.hint {
+    display: block;
+    text-align: right;
+    color: #7f8b83;
+    font-size: .8rem;
+    margin-top: .35rem;
+}
+
+.btn-primary {
+    width: 100%;
+    height: 40px;
+    background: #c7ef9d;
+    color: #173728;
+    border: none;
+}
+
+
+.socials {
+    display: flex;
+    gap: .5rem;
+    margin-top: .75rem;
+    justify-content: flex-end;
+}
+
+.soc {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: #c7ef9d;
+    color: #173728;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.cta-band {
+    padding: 0 0 2.4rem 0;
+}
+
+.cta-card {
+    background: #f7fbef;
+    border: 1px solid rgba(0, 0, 0, .06);
+    border-radius: 14px;
+    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+}
+
+.cta-text h2 {
+    margin: .2rem 0 .35rem 0;
+    font-size: clamp(1.2rem, 1rem + .6vw, 1.6rem);
+}
+
+.cta-text p {
+    margin: 0;
+    color: #6b6b6b;
+}
+
+.btn-cta2 {
+    background: #c7ef9d;
+    color: #173728;
+    border-radius: 10px;
+    padding: .7rem 1rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.site-footer {
+    background-color: #1A3129;
+    color: #fff;
+    padding: 1.25rem 0;
+    margin-top: 2rem;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.cta-text img{
+    margin-left: -15px;
+    margin-top: -15px;
+}
+.petals{
+    margin-left: 103%;
+    margin-bottom: -20px;
+}
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white
+}
+
+.footer-bottom {
+    margin: 20px;
+    background-color: #346454;
+    color: white
+}
+
+.footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+    .panel {
+        grid-template-columns: 1fr;
+    }
+
+    .socials {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 860px) {
+    .contact-strip {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+        .contact-form .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .main-nav {
+        display: none;
+    }
+
+  
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .strip {
+        grid-template-columns: 1fr;
+    }
+}
+
