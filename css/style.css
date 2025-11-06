@@ -40,7 +40,7 @@ body {
 }
 
 .ball {
-    margin-top: 10px;
+    margin-top: 15px;
     height: 20px;
     width: 20px;
 }
@@ -68,7 +68,9 @@ body {
     justify-content: space-between;
     padding: 1rem 0;
 }
-
+.textandlogo{
+    display: flex;
+}
 
 .brand-name {
     font-weight: 700;
@@ -375,7 +377,8 @@ body {
 }
 
 .footer-bottom {
-    background-color: #000;
+    margin: 20px;
+    background-color: #346454;
     color: white
 }
 
